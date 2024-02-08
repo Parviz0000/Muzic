@@ -102,7 +102,7 @@ module.exports = {
         afk: false,
     };
     var online = afk[message.guild.id]
-    if (!song)
+    if (!song) {
             return message.client.queue.delete(message.guild.id);
 }
  let stream = null; 
